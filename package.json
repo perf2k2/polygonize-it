@@ -1,0 +1,24 @@
+{
+  "name": "polygonize-it",
+  "version": "0.5.0",
+  "description": "Simple way to draw polygons on images",
+  "main": "dist/polygonize-it.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/perf2k2/polygonize-it.git"
+  },
+  "keywords": [
+    "polygons",
+    "image",
+    "selection"
+  ],
+  "author": "Perf2k2",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/perf2k2/polygonize-it/issues"
+  },
+  "homepage": "https://github.com/perf2k2/polygonize-it#readme"
+}
