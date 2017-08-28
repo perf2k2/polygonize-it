@@ -4,7 +4,8 @@
   "description": "Simple way to draw polygons on images",
   "main": "dist/polygonize-it.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "webpack"
   },
   "repository": {
     "type": "git",
@@ -20,5 +21,10 @@
   "bugs": {
     "url": "https://github.com/perf2k2/polygonize-it/issues"
   },
-  "homepage": "https://github.com/perf2k2/polygonize-it#readme"
+  "homepage": "https://github.com/perf2k2/polygonize-it#readme",
+  "devDependencies": {
+    "ts-loader": "^2.3.4",
+    "typescript": "^2.4.2",
+    "webpack": "^3.5.5"
+  }
 }
