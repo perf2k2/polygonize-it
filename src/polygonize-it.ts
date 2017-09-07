@@ -14,10 +14,6 @@ export class PoligonizeIt {
         this.image.addEventListener("load", function () {
             self.imageLoaded = true;
 
-            self.canvas.height = self.image.height;
-            self.canvas.width = self.image.width;
-            self.clearCanvas();
-
             if (callback !== null) {
                 callback();
             }
