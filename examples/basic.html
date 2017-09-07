@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Basic usage</title>
+    <style>
+        body {
+            text-align: center;
+            padding: 50px 0 0 0;
+        }
+        #image {
+            border: 1px solid #000000;
+        }
+    </style>
+</head>
+<body>
+
+<canvas id="image"></canvas>
+
+<script src="../dist/polygonize-it.min.js"></script>
+<script type="text/javascript">
+    window.onload = function () {
+        var image = new PoligonizeIt('image', "http://www.solidbackgrounds.com/images/2560x1440/2560x1440-white-solid-color-background.jpg");
+
+        var square = new Polygon();
+        square.addPoint(new Point(10, 10));
+        square.addPoint(new Point(100, 10));
+        square.addPoint(new Point(100, 100));
+        square.addPoint(new Point(10, 100));
+
+        var polygon = new Polygon();
+        polygon.addPoint(new Point(120, 30));
+        polygon.addPoint(new Point(120, 80));
+        polygon.addPoint(new Point(220, 100));
+        polygon.addPoint(new Point(280, 60));
+        polygon.addPoint(new Point(280, 20));
+        polygon.addPoint(new Point(250, 10));
+
+        image.drawPolygon(square, '#000000');
+        image.drawPolygon(polygon, 'red');
+    }
+</script>
+</body>
+</html>
