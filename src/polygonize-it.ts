@@ -1,4 +1,4 @@
-export class PoligonizeIt {
+class PoligonizeIt {
     protected readonly image: HTMLImageElement;
     protected readonly canvas: HTMLCanvasElement;
     protected readonly context: CanvasRenderingContext2D;
@@ -66,7 +66,7 @@ export class PoligonizeIt {
     }
 }
 
-export class Polygon {
+class Polygon {
     protected readonly points: Point[] = [];
 
     public getPointsCount(): number {
@@ -98,7 +98,7 @@ export class Polygon {
     }
 }
 
-export class Point {
+class Point {
     protected readonly x: number;
     protected readonly y: number;
 
@@ -120,7 +120,7 @@ export class Point {
     }
 }
 
-export class Helpers {
+class Helpers {
     public static getClickCoords(canvas: any, event: MouseEvent): number[] {
         const rect = canvas.getBoundingClientRect();
         const canvasX = (event.clientX - rect.left) / (rect.right-rect.left) * canvas.width;
