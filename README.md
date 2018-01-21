@@ -1,13 +1,17 @@
 # polygonize-it
 
-Polygonize-it is a small library for drawing polygons on image, based on canvas element.
+Polygonize-it is a small library for drawing polygons on canvas.
+
+### Demo
+
+https://perf2k2.github.io/projects/poligonize-it.html
 
 ### Install
 
-Install with npm:
+Include script on page:
 
-```bash
-npm install polygonize-it
+```html
+<script src="/js/polygonize-it.min.js"></script>
 ```
 
 ### Usage
