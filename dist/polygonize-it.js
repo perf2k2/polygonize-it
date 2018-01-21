@@ -1,18 +1,14 @@
 var PoligonizeIt = (function () {
-    function PoligonizeIt(canvasId, imageSrc, callback) {
+    //TODO: add support for image background
+    function PoligonizeIt(canvasId, callback) {
         if (callback === void 0) { callback = null; }
         this.imageLoaded = false;
         this.image = new Image();
         this.canvas = document.getElementById(canvasId);
         this.context = this.canvas.getContext("2d");
-        this.image.src = imageSrc;
-        var self = this;
-        this.image.addEventListener("load", function () {
-            self.imageLoaded = true;
-            if (callback !== null) {
-                callback();
-            }
-        });
+        if (callback !== null) {
+            callback();
+        }
     }
     PoligonizeIt.prototype.getCanvas = function () {
         return this.canvas;

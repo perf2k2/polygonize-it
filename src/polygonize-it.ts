@@ -3,21 +3,16 @@ class PoligonizeIt {
     protected readonly canvas: HTMLCanvasElement;
     protected readonly context: CanvasRenderingContext2D;
     protected imageLoaded: boolean = false;
-    
-    constructor(canvasId: string, imageSrc: string, callback = null) {
+
+    //TODO: add support for image background
+    constructor(canvasId: string, callback = null) {
         this.image = new Image();
         this.canvas = <HTMLCanvasElement>document.getElementById(canvasId);
         this.context = this.canvas.getContext("2d");
-        this.image.src = imageSrc;
-        
-        const self = this;
-        this.image.addEventListener("load", function () {
-            self.imageLoaded = true;
 
-            if (callback !== null) {
-                callback();
-            }
-        });
+        if (callback !== null) {
+            callback();
+        }
     }
     
     public getCanvas(): HTMLCanvasElement {
